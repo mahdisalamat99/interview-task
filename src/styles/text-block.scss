@@ -1,0 +1,54 @@
+.text-block-comp{
+    background: rgb(32, 30, 30);
+    padding: 15px;
+    .title{
+        color: white;
+    }
+    .content{
+        margin: 10px 0;
+        .img-con{
+            float: left;
+            margin-right: 10px;
+            width: 145px;
+            height: 100px;
+            background: rgb(112, 82, 82);
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        p{
+            color: white;
+            line-height: 1.5;
+        }
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .avatar{
+            min-width: 50px;
+            min-height: 50px;
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            border: 1px solid yellow;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .date{
+            color: white;
+        }
+        .category{
+            color: yellow;
+            border: none;
+            outline: none;
+            font-family: inherit;
+            font-weight: bold;
+            background: none;
+        }
+    }
+}

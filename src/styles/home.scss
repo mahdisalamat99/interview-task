@@ -1,0 +1,11 @@
+.home-comp{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 300px 435px auto;
+    gap: 15px;
+    >div{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
