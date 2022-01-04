@@ -14,34 +14,34 @@ export default function Home({imageBlocks,bigBlocks,textBlocks,filter}) {
         <div className="home-comp">
             <div>
                 {
-                    // nav !== "all" ? (
-                    //     imageBlocks?.filter((item) => item.category.toLowerCase() === nav).map((block) => {
-                    //         return (
-                    //             <ImageBlock imageBlocks={block}/>
-                    //         )
-                    //     })
-                    // ) : (
-                        //     imageBlocks.map((block) => {
-                            //         return (
-                                //             <ImageBlock imageBlocks={block}/>
-                                //         )
-                                //     })
-                                // ) 
-                                filter !== "all" ? (
-                                    imageBlocks?.filter((item)=> item.category.toLowerCase() === filter.toLowerCase()).map((block) => {
-                                        return (
-                                                    <ImageBlock imageBlocks={block}/>
-    
-                                                )
+                    nav !== "all" ? (
+                        imageBlocks?.filter((item) => item.category.toLowerCase() === nav).map((block) => {
+                            return (
+                                <ImageBlock imageBlocks={block}/>
+                            )
                         })
+                    ) : (
+                            imageBlocks.map((block) => {
+                                    return (
+                                            <ImageBlock imageBlocks={block}/>
+                                        )
+                                    })
+                                ) 
+                        //         filter !== "all" ? (
+                        //             imageBlocks?.filter((item)=> item.category.toLowerCase() === filter.toLowerCase()).map((block) => {
+                        //                 return (
+                        //                             <ImageBlock imageBlocks={block}/>
+    
+                        //                         )
+                        // })
 
-                                ) : (
-                                    imageBlocks.map((block) => {
-                                                return (
-                                                        <ImageBlock imageBlocks={block}/>
-                                                    )
-                                                })
-                                )
+                        //         ) : (
+                        //             imageBlocks.map((block) => {
+                        //                         return (
+                        //                                 <ImageBlock imageBlocks={block}/>
+                        //                             )
+                        //                         })
+                        //         )
                 }
             </div>
 

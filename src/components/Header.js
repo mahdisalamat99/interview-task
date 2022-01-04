@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import '../styles/header.scss';
 import {
-    Link
+    NavLink
   } from "react-router-dom";
 
 export default function Header ({categories,filter}){
@@ -12,7 +12,11 @@ export default function Header ({categories,filter}){
                 {categories.map((cat) => {
                     return (
                         
-                        <li onClick={()=> filter(cat)}><Link to={`/${cat.toLowerCase()}`}>{cat.toUpperCase()}</Link></li>
+                        <li onClick={()=> filter(cat)}>
+                            <NavLink to={`/${cat.toLowerCase()}`} 
+                                className={({isActive})=>(isActive ? "activeitem" : "")}>
+                                    {cat.toUpperCase()}
+                            </NavLink></li>
                     )
                 })}
             </ul>

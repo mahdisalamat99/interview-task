@@ -14,8 +14,13 @@
             list-style-type: none;
             color: white;
             cursor: pointer;
-            &.active{
-                color: yellow;
+            a{
+                color: white;
+                text-decoration: none;
+                &.activeitem{
+                    color: yellow;
+                }
+
             }
         }
     }
